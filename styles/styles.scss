@@ -1,0 +1,191 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body{
+    font-family: $urbanist;
+    background-color: #cecece;
+    @include flex;
+    height: 95vh;
+    width: 95vw;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 30%;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    @include flexColumn;
+    color: $text-color;
+    font-size: calculadora-rem(18);
+}
+
+.title{
+    color: $main-color;
+    font-size: calculadora-rem(35);
+    margin-bottom: 30px;
+}
+
+.label-input-wrapper{
+    @include flexColumn;
+    align-items: flex-start;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.label-all{
+    margin-bottom: 5px;
+}
+
+.input-all{
+    border: 1px solid $input-color;
+    color: $placeholder-color;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: calculadora-rem(18);
+    outline: none;
+}
+
+.input-all::placeholder{
+    color: $placeholder-color;
+}
+
+.input-all:focus{
+    border: 1px solid $main-color;
+    transition-duration: 500ms;
+}
+
+.input-password-wrapper{
+    width: 100%;
+    @include flex;
+    border: 1px solid $input-color;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+
+.input-password-wrapper:focus-within{
+    border: 1px solid $main-color;
+    transition-duration: 500ms;
+}
+
+.input-password-all:focus{
+    border: none;
+}
+
+
+.fa-eye-slash{
+    font-size: calculadora-rem(18);
+    color: $placeholder-color;
+    cursor: pointer;
+}
+
+.terms-of-use-wrapper{
+    width: 70%;
+    margin-bottom: 50px;
+    @include flex;
+}
+
+.input-terms-of-use{
+    border: 3px solid $input-color;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    @include flex;
+    color: $placeholder-color;
+    box-sizing: border-box;
+}
+
+.text-terms-of-use{
+    width: 80%;
+
+}
+
+.input-terms-of-use + .text-terms-of-use{
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-check{
+    font-size: calculadora-rem(30);
+    transform: translateX(7px) translateY(-5px);
+}
+
+.link-terms-of-use{
+    color: $main-color;
+}
+
+.button-all{
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    background-color: $main-color;
+    font-size: calculadora-rem(20);
+    color: $input-color;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-all:focus{
+    border: 1px solid $input-color;
+    transition-duration: 500ms;
+}
+
+.incorrect-password{
+    animation: error-no-no 500ms;
+    border: 1px solid #ff4b4b;
+}
+
+.error{
+    animation: error-no-no 500ms;
+    border: 1px solid #ff4b4b;
+}
+
+.warnning{
+    color: #ff4b4b;
+    margin-bottom: 20px;
+    display: none;
+    margin-top: 10px;
+}
+
+.show{
+    display: flex;
+}
+
+.no-checked{
+    border: 1px solid #ff4b4b;
+    transition-duration: 500ms;
+}
+
+
+.input-password-all{
+    width: 93%;
+    border: none;  
+    animation: none;
+}
+
+.done-wrapper{
+    display: none;
+}
+
+@keyframes error-no-no{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-1%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-1%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

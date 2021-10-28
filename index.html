@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/styles/reset.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <link rel="stylesheet" href="/styles/styles.css"/>
+    <link rel="stylesheet" href="/styles/variables.css"/>
+    <link rel="stylesheet" href="/styles/mixins.css"/>
+    <title>Register</title>
+</head>
+<body>
+    <form class="container">
+        <h1 class="title">Faça seu cadastro</h1>
+        <div class="label-input-wrapper">
+            <label for="full-name" class="label-all label-full-name">Nome Completo</label>
+            <input type="text" id="full-name" placeholder="Digite seu nome completo" class="input-all input-full-name">
+        </div>
+        <div class="label-input-wrapper">
+            <label for="email" class="label-all label-email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" class="input-all input-email">
+        </div>
+        <div class="label-input-wrapper">
+            <label for="password" class="label-all label-password">Senha</label>
+            <div class="input-password-wrapper">
+                <input type="password" id="password" placeholder="Crie uma senha" class="input-all input-password input-password-all">
+                <i class="far fa-eye-slash fa-eye-slash-passowrd"></i>
+            </div>
+        </div>
+        <div class="label-input-wrapper">
+            <label for="confirm-password" class="label-all label-confirm-password">Confirme a senha</label>
+            <div class="input-password-wrapper">
+                <input type="password" id="confirm-password" placeholder="Confirme a senha" class="input-all input-confirm-password input-password-all">
+                <i class="far fa-eye-slash fa-eye-slash-confirm-passowrd"></i>
+            </div>
+        </div>
+        <div class="terms-of-use-wrapper">
+            <div class="input-terms-of-use" id="checkbox">
+            </div>
+            <p class="text-terms-of-use">Aceito os Termos de Uso e concordo com as <a href="#" class="link-terms-of-use">Políticas de Privacidade</a></p>
+        </div>
+        <button class="button-all button-registers">Cadastrar</button>
+        <span class="warnning">* Preencha as partes em branco, por favor.</span>
+        <section class="done-wrapper">
+            <lottie-player src="https://assets9.lottiefiles.com/datafiles/x4WYMt3Jz674U59/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"    autoplay></lottie-player>
+            <p class="done-text">Cadastro Concluido!</p>
+        </section>
+    </form>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
+

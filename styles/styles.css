@@ -1,0 +1,299 @@
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: #cecece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+  width: 95vw;
+}
+
+.container {
+  background-color: #FFFFFF;
+  width: 30%;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #BF8489;
+  font-size: 1.125rem;
+}
+
+.title {
+  color: #EB5474;
+  font-size: 2.1875rem;
+  margin-bottom: 30px;
+}
+
+.label-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.label-all {
+  margin-bottom: 5px;
+}
+
+.input-all {
+  border: 1px solid #FFE6DF;
+  color: #D9A0A0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.125rem;
+  outline: none;
+}
+
+.input-all::-webkit-input-placeholder {
+  color: #D9A0A0;
+}
+
+.input-all:-ms-input-placeholder {
+  color: #D9A0A0;
+}
+
+.input-all::-ms-input-placeholder {
+  color: #D9A0A0;
+}
+
+.input-all::placeholder {
+  color: #D9A0A0;
+}
+
+.input-all:focus {
+  border: 1px solid #EB5474;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.input-password-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFE6DF;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.input-password-wrapper:focus-within {
+  border: 1px solid #EB5474;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.input-password-all:focus {
+  border: none;
+}
+
+.fa-eye-slash {
+  font-size: 1.125rem;
+  color: #D9A0A0;
+  cursor: pointer;
+}
+
+.terms-of-use-wrapper {
+  width: 70%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-terms-of-use {
+  border: 3px solid #FFE6DF;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #D9A0A0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-terms-of-use {
+  width: 80%;
+}
+
+.input-terms-of-use + .text-terms-of-use {
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-check {
+  font-size: 1.875rem;
+  -webkit-transform: translateX(7px) translateY(-5px);
+          transform: translateX(7px) translateY(-5px);
+}
+
+.link-terms-of-use {
+  color: #EB5474;
+}
+
+.button-all {
+  height: 50px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  background-color: #EB5474;
+  font-size: 1.25rem;
+  color: #FFE6DF;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-all:focus {
+  border: 1px solid #FFE6DF;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.incorrect-password {
+  -webkit-animation: error-no-no 500ms;
+          animation: error-no-no 500ms;
+  border: 1px solid #ff4b4b;
+}
+
+.error {
+  -webkit-animation: error-no-no 500ms;
+          animation: error-no-no 500ms;
+  border: 1px solid #ff4b4b;
+}
+
+.warnning {
+  color: #ff4b4b;
+  margin-bottom: 20px;
+  display: none;
+  margin-top: 10px;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.no-checked {
+  border: 1px solid #ff4b4b;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.input-password-all {
+  width: 93%;
+  border: none;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.done-wrapper {
+  display: none;
+}
+
+@-webkit-keyframes error-no-no {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes error-no-no {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
